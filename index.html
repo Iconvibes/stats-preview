@@ -8,6 +8,9 @@
 
   <link href="./output.css" rel="stylesheet">
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend+Deca:wght@100..900&display=swap" rel="stylesheet">
   
   <title>Frontend Mentor | Stats preview card component</title>
 
@@ -18,18 +21,64 @@
   </style>
 </head>
 <body>
-  Get insights that help your business grow.
+  <!-- background container -->
+   <section class="bg-mainBackground h-screen justify-center items-center p-1.5 ">
+    <!-- card container  -->
+     <div class="w-[80%] mx-auto bg-cardBackground rounded-2xl max-h-full md:w-[60%] md:flex flex-row-reverse md:mt-[10%]">
 
-  Discover the benefits of data analytics and make better decisions regarding revenue, customer 
-  experience, and overall efficiency.
+      <!-- image container -->
+      <div class="relative md:max-w-[50%]">
+        <img src="./images/image-header-mobile.jpg" alt="" class="block md:hidden rounded-t-2xl">
+        
+        <img src="./images/image-header-desktop.jpg" alt="" class="hidden md:block rounded-t-none rounded-r-2xl rounded-l-none">
 
-  10k+ companies
-  314 templates
-  12m+ queries
+        <div class="absolute bg-[#af0dafa1] top-0 w-full h-full rounded-t-2xl md:rounded-t-none md:rounded-r-2xl"></div>
+      </div>
 
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+      <!-- card content -->
+       <div class="p-6 md:max-w-[50%] md:flex md:flex-col md:justify-around md:items-center">
+
+        <!-- main title -->
+      <h1 class="text-white font-bold text-2xl text-center w-[70%] mx-auto mb-3">
+        Get <span class="text-accent">insights</span> that help your business grow.
+      </h1>
+
+      <!-- content -->
+      <p class="text-white text-sm text-center font-thin mb-3">
+        Discover the benefits of data analytics and make better decisions regarding revenue, customer 
+        experience, and overall efficiency.
+      </p>
+
+      <!-- stats container -->
+      <div class="flex flex-col space-y-1.5 md:flex-row md:space-y-0 space-x-2.5 items-center">
+
+        <h2 class="font-bold text-center text-white text-2xl tracking-wide leading-5">
+          10k+ <br> <span class="font-thin text-sm">companies</span> 
+        </h2>
+
+        <h2 class="font-bold text-center text-white text-2xl tracking-wide leading-5">
+          314 <br> <span class="font-thin text-sm">templates</span> 
+        </h2>
+
+        <h2 class="font-bold text-center text-white text-2xl tracking-wide leading-5">
+          12m+ <br> <span class="font-thin text-sm">queries</span> 
+        </h2>
+
+      </div>
+       </div>
+
+     </div>
+
+
+     <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Ferdinard Ashonibare</a>.
+    </div>
+    
+   </section>
+  
+  
+
+ 
 </body>
 </html>
